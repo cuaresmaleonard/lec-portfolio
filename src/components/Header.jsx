@@ -3,11 +3,11 @@ import { FaCode, FaCloud, FaBolt } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="relative bg-gradient-to-br from-professional-50 via-white to-professional-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-24 lg:py-32 overflow-hidden border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
+    <header className="relative bg-gradient-to-br from-slate-100 via-white to-slate-200 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 py-24 lg:py-32 overflow-hidden border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
       {/* Ambient Decorative Background Lighting */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-        <div className="absolute top-[-10%] right-[-5%] w-[550px] h-[550px] rounded-full bg-professional-200/40 dark:bg-professional-900/20 blur-3xl"></div>
-        <div className="absolute bottom-[-20%] left-[-10%] w-[650px] h-[650px] rounded-full bg-professional-100/50 dark:bg-teal-900/15 blur-3xl"></div>
+        <div className="absolute top-[-10%] right-[-5%] w-[550px] h-[550px] rounded-full bg-slate-300/40 dark:bg-slate-800/20 blur-3xl"></div>
+        <div className="absolute bottom-[-20%] left-[-10%] w-[650px] h-[650px] rounded-full bg-slate-200/50 dark:bg-slate-800/15 blur-3xl"></div>
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
