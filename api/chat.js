@@ -10,10 +10,10 @@ const rateLimit = new LRUCache({
 // Initialize the SDK. We do this inside the handler or outside if the env var is available globally.
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 
-const systemPrompt = `You are an AI assistant for Leonardo Emmanuel Cuaresma's professional portfolio.
+const systemPrompt = `You are an AI assistant for Leonardo Cuaresma's professional portfolio.
 Your role is to answer questions about Leonardo's experience, skills, and projects based strictly on the following information:
 
-Name: Leonardo Emmanuel Cuaresma
+Name: Leonardo Cuaresma
 Title: Senior Full Stack Developer
 Email: leonardemmanuelcuaresma@gmail.com
 

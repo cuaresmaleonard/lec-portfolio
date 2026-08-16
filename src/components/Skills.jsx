@@ -1,8 +1,6 @@
 import React from 'react';
 
 const skills = [
-  "SAP SuccessFactors",
-  "SAP HCM",
   "Employee Central",
   "Recruitment & Onboarding",
   "Time Tracking",
@@ -28,7 +26,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div 
               key={index} 
-              className="px-6 py-3 bg-professional-50 dark:bg-gray-800 text-professional-800 dark:text-professional-300 font-medium rounded-md shadow-sm border border-professional-100 dark:border-gray-700 hover:bg-professional-500 hover:text-white dark:hover:bg-professional-500 dark:hover:text-white transition-all duration-300 cursor-default hover:-translate-y-1"
+              className="px-6 py-3 bg-professional-50 dark:bg-gray-800 text-professional-800 dark:text-teal-300 font-medium rounded-md shadow-sm border border-professional-100 dark:border-gray-700 hover:bg-professional-500 hover:text-white dark:hover:bg-teal-500 dark:hover:text-white transition-all duration-300 cursor-default hover:-translate-y-1"
             >
               {skill}
             </div>

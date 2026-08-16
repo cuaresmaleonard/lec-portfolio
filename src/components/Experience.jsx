@@ -1,18 +1,20 @@
 import React from 'react';
-import palLogo from '../assets/pal_logo.png';
-import accentureLogo from '../assets/accenture_logo.png';
-import epldtLogo from '../assets/epldt_logo.png';
-import ngaLogo from '../assets/nga_hr_logo.png';
+import ascendionLogo from '../assets/ascendion_logo.jpg';
+import pwsLogo from '../assets/pws_logo.jpg';
+import manulifeLogo from '../assets/manulife_logo.webp';
+import skycableLogo from '../assets/skycable_logo.svg';
 
 const experiences = [
   {
     company: "Ascendion",
+    logo: ascendionLogo,
     location: "Remote",
     title: "Senior Full Stack Developer",
     date: "Feb 2026 - Present",
     responsibilities: [
       <>Led backend optimization initiatives, implementing <strong>microservices and event-driven architectures</strong> to support high-throughput, real-time applications.</>,
       <>Designed and deployed cloud-native solutions on <strong>AWS and Azure</strong>, leveraging <strong>Kubernetes, Docker, and Terraform</strong> for infrastructure automation and CI/CD pipelines.</>,
+      <>Developed robust full-stack and mobile applications leveraging <strong>Java Spring Boot</strong> and <strong>React Native</strong> to deliver seamless, cross-platform user experiences.</>,
       <>Collaborated with cross-functional teams to deliver data-driven features, integrating <strong>SQL and NoSQL databases</strong> (PostgreSQL, MongoDB, Redis) with optimized indexing and caching strategies.</>,
       <>Mentored junior developers, established coding standards, and improved onboarding documentation to streamline team productivity.</>,
       <>Spearheaded initiatives to integrate <strong>AI-powered monitoring and DevOps automation</strong>, reducing downtime and improving deployment efficiency.</>
@@ -20,6 +22,7 @@ const experiences = [
   },
   {
     company: "People Work Smart Pty Ltd",
+    logo: pwsLogo,
     location: "Remote",
     title: "Full Stack Developer",
     date: "Oct 2024 - Feb 2026",
@@ -34,6 +37,7 @@ const experiences = [
   },
   {
     company: "Manulife IT Delivery Center Asia Inc.",
+    logo: manulifeLogo,
     location: "Quezon City, PH",
     title: "Associate Full Stack Software Engineer",
     date: "May 2021 - Oct 2024",
@@ -47,6 +51,7 @@ const experiences = [
   },
   {
     company: "Skycable Corporation",
+    logo: skycableLogo,
     location: "Quezon City, PH",
     title: "NOC Associate",
     date: "Sep 2017 - May 2021",
@@ -80,7 +85,7 @@ const Experience = () => {
                   )}
                   <div>
                     <h3 className="text-2xl font-semibold text-gray-900 dark:text-white">{exp.title}</h3>
-                    <div className="text-lg font-medium text-professional-600 dark:text-professional-400 mt-1">
+                    <div className="text-lg font-medium text-professional-600 dark:text-teal-300 mt-1">
                       {exp.company} <span className="text-gray-400 dark:text-gray-600 mx-2">&bull;</span> <span className="text-gray-500 dark:text-gray-400 text-base">{exp.location}</span>
                     </div>
                   </div>
@@ -92,7 +97,7 @@ const Experience = () => {
               <ul className="space-y-3 text-gray-600 dark:text-gray-300">
                 {exp.responsibilities.map((resp, idx) => (
                   <li key={idx} className="flex items-start">
-                    <span className="text-professional-500 dark:text-professional-400 mr-3 mt-1.5">&bull;</span>
+                    <span className="text-professional-500 dark:text-teal-400 mr-3 mt-1.5">&bull;</span>
                     <span className="leading-relaxed">{resp}</span>
                   </li>
                 ))}

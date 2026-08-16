@@ -58,12 +58,12 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
             <p className="text-gray-400 mb-6 max-w-sm">
               I'm always open to discussing new opportunities, system
-              integrations, and business process improvements.
+              integrations, and cloud architecture projects.
             </p>
             <div className="flex flex-col gap-4">
               <a
                 href="mailto:leonardemmanuelcuaresma@gmail.com"
-                className="flex items-center gap-3 text-professional-400 hover:text-professional-300 transition-colors"
+                className="flex items-center gap-3 text-teal-300 hover:text-teal-200 transition-colors"
               >
                 <svg
                   className="w-5 h-5"
@@ -84,7 +84,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/leonardo-cuaresma-19b679142/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-3 text-professional-400 hover:text-professional-300 transition-colors"
+                className="flex items-center gap-3 text-teal-300 hover:text-teal-200 transition-colors"
               >
                 <svg
                   className="w-5 h-5"
@@ -94,6 +94,21 @@ const Footer = () => {
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
                 LinkedIn Profile
+              </a>
+              <a
+                href="https://github.com/cuaresmaleonard"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-3 text-teal-300 hover:text-teal-200 transition-colors"
+              >
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                GitHub Profile
               </a>
             </div>
           </div>
@@ -112,7 +127,7 @@ const Footer = () => {
                   onChange={handleChange}
                   required
                   placeholder="Your Name"
-                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-professional-500 transition-colors"
+                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors"
                 />
               </div>
               <div>
@@ -123,7 +138,7 @@ const Footer = () => {
                   onChange={handleChange}
                   required
                   placeholder="Your Email"
-                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-professional-500 transition-colors"
+                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors"
                 />
               </div>
               <div>
@@ -134,7 +149,7 @@ const Footer = () => {
                   required
                   placeholder="Your Message"
                   rows="3"
-                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-professional-500 transition-colors resize-none"
+                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-teal-400 transition-colors resize-none"
                 ></textarea>
               </div>
               {!import.meta.env.DEV && (
@@ -156,7 +171,7 @@ const Footer = () => {
               <button 
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full bg-professional-600 hover:bg-professional-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-medium py-2 rounded-lg transition-colors"
+                className="w-full bg-professional-600 hover:bg-teal-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-medium py-2 rounded-lg transition-colors"
               >
                 {status === 'loading' ? 'Sending...' : status === 'success' ? 'Message Sent!' : status === 'error' ? 'Error Sending' : 'Send Message'}
               </button>
@@ -165,7 +180,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center pt-8 border-t border-gray-800 text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} Leonardo Emmanuel Cuaresma. All rights
+          &copy; {new Date().getFullYear()} Leonardo Cuaresma. All rights
           reserved.
         </div>
       </div>
